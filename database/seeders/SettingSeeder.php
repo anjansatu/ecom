@@ -41,14 +41,7 @@ class SettingSeeder extends BaseSeeder
                 'key' => 'payment_stripe_description',
                 'value' => 'Payment with Stripe',
             ],
-            [
-                'key' => 'payment_stripe_client_id',
-                'value' => 'pk_test_51JGbXaLmHOfJnFasFfg5ksgorTTlnnqt8RzdrT1qIjqg5sGcVK3fNWBZu1OZ84ndCI4fo0Bdm7TL1yLfiC6e7nF700hBjwxbKa',
-            ],
-            [
-                'key' => 'payment_stripe_secret',
-                'value' => 'sk_test_51JGbXaLmHOfJnFasntP9rqE8wZ0qghWeMKcdlQphvMNo7C2sVaTFgRcjlnof8XVBRZspgVk7ctO62QlY10E8rHNT002pnOk3VI',
-            ],
+          
             [
                 'key' => 'payment_stripe_status',
                 'value' => '1',
