@@ -17,10 +17,12 @@ abstract class PageSpeed
     {
         $response = $next($request);
 
+        $contentType = $response->headers->get('Content-Type');
+
         if (! OptimizerHelper::isEnabled()
             || $request->segment(1) == '_debugbar'
             || $request->expectsJson()
-            || in_array($response->headers->get('Content-Type'), ['application/json', 'application/pdf'])
+            || ($contentType && ! str_contains($contentType, 'text'))
             || $response instanceof BinaryFileResponse
             || $response instanceof StreamedResponse
         ) {
